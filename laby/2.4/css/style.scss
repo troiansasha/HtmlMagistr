@@ -1,0 +1,106 @@
+@import '_device_mixin';
+@import '_normalize';
+
+@mixin backgroundColor($color) {
+    background-color: $color;
+}
+@mixin borderRadius($topLeft, $topRight, $botLeft, $botRight) {
+    border-radius: $topLeft $topRight $botLeft $botRight;
+}
+
+$green: rgb(14, 155, 14);
+$light-green: rgb(0, 196, 0);
+$dark-green: rgba(0, 102, 0, 0.568);
+$yellow: yellow;
+$orange: rgb(230, 149, 0);
+$light-orange: rgb(255, 166, 0);
+$dark-orange: rgb(196, 127, 0);
+$purple: rgb(155, 0, 129);
+$light-purple: rgba(214, 0, 178, 0.815);
+$blue: rgb(0, 96, 240);
+$light-blue: rgb(0, 225, 255);
+$red: rgb(184, 24, 24);
+$light-red: rgb(241, 64, 64);
+$grey: grey;
+$light-grey: rgb(156, 156, 156);
+$dark-grey: rgb(56, 56, 56);
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 800px;
+    display: flex;
+    justify-content: space-around
+}
+.column{
+
+    button{
+        display: block;
+        margin: 10px 0px;
+        width: 150px;
+        height: 30px;
+        border: 0px;
+        color: white
+    }
+}
+
+.green{
+    @include backgroundColor($green);
+}
+.light-green{
+    @include backgroundColor($light-green)
+}
+.dark-green{
+    @include backgroundColor($dark-green)
+}
+.yellow{
+    @include backgroundColor($yellow)
+}
+.orange{
+    @include backgroundColor($orange)
+}
+.light-orange{
+    @include backgroundColor($light-orange)
+}
+.dark-orange{
+    @include backgroundColor($dark-orange)
+}
+.purple{
+    @include backgroundColor($purple)
+}
+.light-purple{
+    @include backgroundColor($light-purple)
+}
+.blue{
+    @include backgroundColor($blue)
+}
+.light-blue{
+    @include backgroundColor($light-blue)
+}
+.red{
+    @include backgroundColor($red)
+}
+.light-red{
+    @include backgroundColor($light-red)
+}
+.grey{
+    @include backgroundColor($grey)
+}
+.light-grey{
+    @include backgroundColor($light-grey)
+}
+.dark-grey{
+    @include backgroundColor($dark-grey)
+}
+.rounded-right{
+    @include borderRadius (2px, 8px, 2px, 8px);
+}
+.rounded-left{
+    @include borderRadius (8px, 2px, 8px, 2px);
+}
+.rounded{
+    @include borderRadius (8px, 8px, 8px, 8px);
+}

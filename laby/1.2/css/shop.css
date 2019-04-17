@@ -1,0 +1,26 @@
+.price-content {
+  background: url("../img/background-white.png");
+  padding: 60px 0px 30px 0px;
+}
+
+.price-content .item-name {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.price-content .breadcrumbs {
+  margin: 30px 0px 60px;
+}
+
+.price-content .breadcrumbs span {
+  font-size: 14px;
+}
+
+.price-content .breadcrumbs img {
+  margin: 0px 15px;
+}
+
+.price-content .breadcrumbs .breadcrumb-active {
+  color: #d1cecc;
+}
+/*# sourceMappingURL=shop.css.map */

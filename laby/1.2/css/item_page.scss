@@ -1,0 +1,112 @@
+@import '_device_mixin';
+
+.item-content{ 
+    background: url("../img/background-white.png");
+    padding: 60px 0px 30px 0px;
+
+    @include xSmall{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .item-name{
+        font-size: 30px;
+        line-height: 42px;
+
+        @include xSmall{
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+
+    .shop-holder{
+        display: flex;
+        justify-content: space-between;
+
+        @include xSmall{
+            flex-wrap: wrap;
+            padding: 0px 5px;
+        }
+        &__images{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include xSmall{
+                width: 100%;
+            }
+
+            img{
+                width: 33%;
+                
+                &:first-child{
+                    width: 100%
+                }
+            }
+        }
+
+        &__info{
+            width: 50%;
+            padding: 30px 15px 30px 70px;
+            font-size: 14px;
+            line-height: 24px;
+            
+            @include xSmall{
+                width: 100%;
+                padding: 30px 0px;
+            }
+
+            &-available{
+                float: left;
+            }
+            &-article{
+                float: right;
+                color: #aeaeae;
+            }
+            &-description{
+                margin-top: 50px;
+            }
+            &-price{
+                display: flex;
+                margin-top: 45px;
+
+                @include xSmall{
+                    margin-top: 15px;
+                    justify-content: center;
+                }
+
+                span{
+                    background-color: #e5e5e5;
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 27px;
+                }
+                .button{
+                    width: 78px;
+                    padding: 10px;
+                    margin: 0px;
+                }
+            }
+            &-including{
+                margin-top: 65px;
+
+                @include xSmall{
+                    margin-top: 20px;
+                    text-align: center;
+                }
+                h2{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+                ul{
+                    margin-top: 30px;
+                    padding-left: 20px;
+
+                    li{
+                        list-style-image: url("../img/diamond-black.png");
+                    }
+                }
+            }
+        }
+    }
+}

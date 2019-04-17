@@ -1,0 +1,260 @@
+@import '_device_mixin';
+
+.main-content{
+    background: url('../img/background.png') no-repeat;    
+    background-position: top;
+    background-attachment: fixed; 
+
+    .main{
+        padding: 50px 0px 60px;
+
+        @include xSmall{
+            padding: 40px 0px 20px;
+        }
+
+        &__logo{
+            display: block;
+            margin: 0px auto;
+
+            @include xSmall{
+                max-width: 300px;
+            }
+        }
+
+        &__advantages{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 70px;
+
+            @include xSmall{
+                flex-wrap: wrap;
+            }
+
+            .advantage{
+                padding: 0px 15px;
+                text-align: center;
+                color: white;
+
+                @include xSmall{
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+
+                &-title{
+                    font-size: 30px;
+                }
+                
+                &-diamond{
+                    margin: 15px auto 25px;
+
+                    @include xSmall{
+                        margin: 10px auto 15px;
+                    }
+                }
+            }
+        }
+
+        .container{
+            background-color: #f8f5f2;
+            padding: 55px 70px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+
+            @include xSmall{
+                flex-wrap: wrap;
+                padding: 25px 10px;
+            }
+
+            &-header{
+                font-size: 30px;
+
+                @include Small{
+                    font-size: 26px;
+                }
+                @include xSmall{
+                    width: 100%;
+                    text-align: center
+                }
+            }
+
+            .lined{
+                position: relative;
+
+                &::after{
+                    content: '';
+                    height: 100%;
+                    width: 2px;
+                    background-image: linear-gradient(#ffffff, #c7c5c2, #ffffff);
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    
+                    @include xSmall{
+                        height: 2px;
+                        width: 100%;
+                        top: unset;
+                        left: 0;
+                    }
+                }
+            }
+
+            &__news{
+                width: 50%;
+
+                @include xSmall{
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+
+                &-item{
+                    padding-right: 15px;
+                    margin-top: 30px;
+
+                    &-text{
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                    &-date{
+                        font-size: 14px;
+                        text-transform: none;
+                    }
+                }
+
+                &-btn{
+                    margin: 30px auto 0px
+                }
+            }
+
+            &__gallery{
+                width: 40%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                @include Small{
+                    width: 45%;
+                }
+                @include xSmall{
+                    width: 100%;
+                }
+
+                &-img{
+                    margin: 30px auto; 
+                    width: 100%;
+
+                    @include xSmall{
+                        max-width: 320px;
+                    }
+                }
+                &-buttons{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    @include xSmall{                 
+                        justify-content: center;
+                    }
+
+                    .button{
+                        @include xSmall{                 
+                            margin: 0px 10px;
+                        }
+                    }
+                }
+            }
+
+            &__contacts{
+                width: 50%;
+
+                @include xSmall{                 
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 25px;
+                }
+
+                &-name, &-time{
+                    margin-top: 30px;
+                }
+                p{
+                    line-height: 24px;
+                }
+                .button{
+                    display: inline-block;
+                    margin-top: 36px;
+
+                    @include xSmall{
+                        margin-top: 10px;
+                    }
+
+                    &.container__contacts-map{
+                        margin-left: 0px;
+                        margin-right: 20px;
+
+                        @include xSmall{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            &__sign{
+                width: 40%;
+
+                @include Small{
+                    width: 45%;
+                }
+                @include xSmall{                 
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 20px;
+                }
+
+                &-text{
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    line-height: 24px;
+                }
+
+                &-form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    input{
+                        width: 145px;
+                        background-color: transparent;
+                        padding: 10px 15px;
+                        text-transform: uppercase;
+                        border: 3px solid black;
+                        color: black;
+                        cursor: pointer;
+                        margin-bottom: 20px;
+
+                        @include Small{
+                            width: 45%;
+                        }
+                        @include xSmall{
+                            width: 45%;
+                        }
+
+                        &::placeholder{
+                            color: black;
+                            opacity: 1;
+                        }
+                        &:focus{
+                            outline: 0;
+                            border: 3px solid #663d15;
+                        }
+                    }
+
+                    button{
+                        width: 100%;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import '_device_mixin';
+
+footer{
+    background-image: url("../img/footer.png");
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+
+    .wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0px 40px 0px;
+
+        @include xSmall{
+            padding: 15px 0px 20px 0px;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .footer{
+        &__adress{
+            &-find{
+                text-decoration: underline;
+                color: white
+            }
+        }
+        &__soc{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include xSmall{
+                width: 250px;
+                margin: 10px auto;
+                justify-content: space-around;
+            }
+
+            span{
+                width: 100%;
+                text-align: center;
+
+                @include xSmall{
+                    margin-bottom: 10px;
+                }
+            }
+
+            &-item{
+                width: 43px;
+                height: 43px;
+                background: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover, &:focus{
+                    background: #663d15;
+                }
+            }
+        }
+        &__developed{
+            span{
+                text-align: center;
+                display: block;
+
+                @include xSmall{
+                    margin-top: 20px
+                }
+            }
+            .button{
+                width: auto;
+                margin-top: 15px;
+
+                @include xSmall{
+                    width: 150px;
+                    margin: 10px auto 0px;
+                }
+            }
+        }
+    }
+}

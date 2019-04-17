@@ -1,0 +1,107 @@
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+footer {
+  background-image: url("../img/footer.png");
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+footer .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0px 40px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .wrap {
+    padding: 15px 0px 20px 0px;
+    display: block;
+    text-align: center;
+  }
+}
+
+footer .footer__adress-find {
+  text-decoration: underline;
+  color: white;
+}
+
+footer .footer__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__soc {
+    width: 250px;
+    margin: 10px auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+footer .footer__soc span {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__soc span {
+    margin-bottom: 10px;
+  }
+}
+
+footer .footer__soc-item {
+  width: 43px;
+  height: 43px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__soc-item:hover, footer .footer__soc-item:focus {
+  background: #663d15;
+}
+
+footer .footer__developed span {
+  text-align: center;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__developed span {
+    margin-top: 20px;
+  }
+}
+
+footer .footer__developed .button {
+  width: auto;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__developed .button {
+    width: 150px;
+    margin: 10px auto 0px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

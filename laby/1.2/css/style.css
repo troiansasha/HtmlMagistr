@@ -1,0 +1,1691 @@
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  cursor: pointer;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: none;
+  margin: 0 auto;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+header {
+  background-color: black;
+}
+
+header .header__open {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  header .header__open {
+    display: block;
+    padding: 15px;
+  }
+}
+
+header .header__open span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+header .header__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  header .header__holder {
+    display: none;
+  }
+}
+
+header .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  header .header__menu {
+    display: block;
+  }
+}
+
+header .header__menu-item {
+  text-decoration: none;
+  color: white;
+  padding: 26px 22px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  header .header__menu-item {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header .header__menu-item {
+    display: block;
+    text-align: center;
+    padding: 18px 22px;
+  }
+}
+
+header .header__menu-item:hover {
+  background-color: #242424;
+}
+
+header .header__menu-item.hidden {
+  display: none;
+}
+
+header .header__menu-item:first-child:hover {
+  background-color: unset;
+}
+
+header .header__menu-item.logo {
+  padding: 0px 22px;
+}
+
+header .header__menu-item.active {
+  position: relative;
+}
+
+header .header__menu-item.active:after {
+  content: '';
+  width: 70%;
+  height: 3px;
+  background: white;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+  header .header__menu-item.active:after {
+    width: 20%;
+  }
+}
+
+header .header__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 26px 22px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  header .header__login {
+    padding: 15px 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header .header__login {
+    padding: 18px 22px;
+  }
+}
+
+header .header__login:hover {
+  background-color: #242424;
+}
+
+header .header__login:hover .header__login-img {
+  background: url("../img/icon-login-white.png") no-repeat;
+}
+
+header .header__login-img {
+  background: url("../img/icon-login.png") no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+header .header__login-text {
+  color: white;
+}
+
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+footer {
+  background-image: url("../img/footer.png");
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+footer .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0px 40px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .wrap {
+    padding: 15px 0px 20px 0px;
+    display: block;
+    text-align: center;
+  }
+}
+
+footer .footer__adress-find {
+  text-decoration: underline;
+  color: white;
+}
+
+footer .footer__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__soc {
+    width: 250px;
+    margin: 10px auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+footer .footer__soc span {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__soc span {
+    margin-bottom: 10px;
+  }
+}
+
+footer .footer__soc-item {
+  width: 43px;
+  height: 43px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__soc-item:hover, footer .footer__soc-item:focus {
+  background: #663d15;
+}
+
+footer .footer__developed span {
+  text-align: center;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__developed span {
+    margin-top: 20px;
+  }
+}
+
+footer .footer__developed .button {
+  width: auto;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  footer .footer__developed .button {
+    width: 150px;
+    margin: 10px auto 0px;
+  }
+}
+
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+.main-content {
+  background: url("../img/background.png") no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.main-content .main {
+  padding: 50px 0px 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main {
+    padding: 40px 0px 20px;
+  }
+}
+
+.main-content .main__logo {
+  display: block;
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main__logo {
+    max-width: 300px;
+  }
+}
+
+.main-content .main__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main__advantages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.main-content .main__advantages .advantage {
+  padding: 0px 15px;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main__advantages .advantage {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.main-content .main__advantages .advantage-title {
+  font-size: 30px;
+}
+
+.main-content .main__advantages .advantage-diamond {
+  margin: 15px auto 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main__advantages .advantage-diamond {
+    margin: 10px auto 15px;
+  }
+}
+
+.main-content .main .container {
+  background-color: #f8f5f2;
+  padding: 55px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 25px 10px;
+  }
+}
+
+.main-content .main .container-header {
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .main-content .main .container-header {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container-header {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.main-content .main .container .lined {
+  position: relative;
+}
+
+.main-content .main .container .lined::after {
+  content: '';
+  height: 100%;
+  width: 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(#c7c5c2), to(#ffffff));
+  background-image: linear-gradient(#ffffff, #c7c5c2, #ffffff);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container .lined::after {
+    height: 2px;
+    width: 100%;
+    top: unset;
+    left: 0;
+  }
+}
+
+.main-content .main .container__news {
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__news {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.main-content .main .container__news-item {
+  padding-right: 15px;
+  margin-top: 30px;
+}
+
+.main-content .main .container__news-item-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main-content .main .container__news-item-date {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.main-content .main .container__news-btn {
+  margin: 30px auto 0px;
+}
+
+.main-content .main .container__gallery {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .main-content .main .container__gallery {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__gallery {
+    width: 100%;
+  }
+}
+
+.main-content .main .container__gallery-img {
+  margin: 30px auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__gallery-img {
+    max-width: 320px;
+  }
+}
+
+.main-content .main .container__gallery-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__gallery-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__gallery-buttons .button {
+    margin: 0px 10px;
+  }
+}
+
+.main-content .main .container__contacts {
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__contacts {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+}
+
+.main-content .main .container__contacts-name, .main-content .main .container__contacts-time {
+  margin-top: 30px;
+}
+
+.main-content .main .container__contacts p {
+  line-height: 24px;
+}
+
+.main-content .main .container__contacts .button {
+  display: inline-block;
+  margin-top: 36px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__contacts .button {
+    margin-top: 10px;
+  }
+}
+
+.main-content .main .container__contacts .button.container__contacts-map {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__contacts .button.container__contacts-map {
+    margin-right: 5px;
+  }
+}
+
+.main-content .main .container__sign {
+  width: 40%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .main-content .main .container__sign {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__sign {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+.main-content .main .container__sign-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.main-content .main .container__sign-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-content .main .container__sign-form input {
+  width: 145px;
+  background-color: transparent;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .main-content .main .container__sign-form input {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-content .main .container__sign-form input {
+    width: 45%;
+  }
+}
+
+.main-content .main .container__sign-form input::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.main-content .main .container__sign-form input:-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.main-content .main .container__sign-form input::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.main-content .main .container__sign-form input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.main-content .main .container__sign-form input:focus {
+  outline: 0;
+  border: 3px solid #663d15;
+}
+
+.main-content .main .container__sign-form button {
+  width: 100%;
+  margin: 0px;
+}
+
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+.price-content {
+  background: url("../img/background-white.png");
+  padding: 60px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content {
+    padding: 30px 0px 30px 0px;
+  }
+}
+
+.price-content .price-name {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-name {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+.price-content .price__header {
+  font-size: 48px;
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price__header {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.price-content .price__header span {
+  background: url(../img/background-white.png);
+  position: relative;
+  z-index: 2;
+  padding: 0px 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price__header span {
+    padding: 0px 5px;
+  }
+}
+
+.price-content .price__header:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.price-content .price-holder {
+  margin-top: 65px;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-holder {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.price-content .price-holder-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-holder-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+
+.price-content .price-holder-using {
+  width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-holder-using {
+    width: 100%;
+  }
+}
+
+.price-content .price-holder-using ul {
+  margin-top: 35px;
+  padding-left: 20px;
+}
+
+.price-content .price-holder-using ul li {
+  margin-bottom: 25px;
+  list-style-image: url("../img/diamond-black.png");
+}
+
+.price-content .price-holder-prices {
+  width: 45%;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-holder-prices {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.price-content .price-holder__table {
+  margin-top: 40px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-holder__table {
+    margin-top: 20px;
+  }
+}
+
+.price-content .price-holder__table td, .price-content .price-holder__table th {
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+
+.price-content .price-holder__table td:last-child {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-holder-info {
+    margin-top: 20px;
+  }
+}
+
+.price-content .price-holder-info .info-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .price-content .price-holder-info .info-holder {
+    margin-top: 20px;
+  }
+}
+
+.price-content .price-holder-info .info-holder p {
+  width: 45%;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+.shop-content {
+  background: url("../img/background-white.png");
+  padding: 60px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content {
+    padding: 30px 0px 30px 0px;
+  }
+}
+
+.shop-content .shop-name {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .shop-name {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+.shop-content .shop-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop-content .items-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.shop-content .items-list__aside {
+  width: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__aside {
+    width: 100%;
+    text-align: center;
+    padding: 0px 15px;
+  }
+}
+
+.shop-content .items-list__aside-makers h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__aside-makers h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.shop-content .items-list__aside-makers-item {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-content .items-list__aside-makers-item input {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+
+.shop-content .items-list__aside-makers-item span {
+  font-size: 14px;
+}
+
+.shop-content .items-list__aside-groups {
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__aside-groups {
+    margin-top: 15px;
+  }
+}
+
+.shop-content .items-list__aside-groups h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__aside-groups h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.shop-content .items-list__aside-groups-item {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop-content .items-list__aside-groups-item input {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+
+.shop-content .items-list__aside-groups-item span {
+  font-size: 14px;
+}
+
+.shop-content .items-list__aside-show {
+  margin: 45px 0px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__aside-show {
+    margin: 15px auto 0px;
+  }
+}
+
+.shop-content .items-list__main {
+  width: 72%;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__main {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.shop-content .items-list__main .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__main .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .shop-content .items-list__main .list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.shop-content .items-list__main .list-item {
+  background-color: #f7f7f7;
+  width: 32%;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.38);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.38);
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__main .list-item {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .shop-content .items-list__main .list-item {
+    width: 45%;
+  }
+}
+
+.shop-content .items-list__main .list-item img {
+  width: 95%;
+  margin: 0px auto;
+  display: block;
+}
+
+.shop-content .items-list__main .list-item .main-item__holder {
+  padding: 15px;
+  background-color: white;
+  min-height: 120px;
+}
+
+.shop-content .items-list__main .list-item .main-item__holder-name {
+  font-size: 14px;
+}
+
+.shop-content .items-list__main .list-item .main-item__holder-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.shop-content .items-list__main .list-item .main-item__holder-price span {
+  background-color: #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px;
+  width: 66%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop-content .items-list__main .list-item .main-item__holder-price button {
+  width: 80px;
+  margin: 0px;
+}
+
+.shop-content .items-list__main .pagination {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shop-content .items-list__main .pagination {
+    text-align: center;
+  }
+}
+
+.shop-content .items-list__main .pagination-item {
+  padding: 11px 18px;
+  margin-right: 7px;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.shop-content .items-list__main .pagination-item.active {
+  background-color: white;
+  color: black;
+}
+
+.shop-content .items-list__main .pagination-item.active:hover {
+  background-color: white;
+}
+
+.shop-content .items-list__main .pagination-item:hover {
+  background-color: #663d15;
+}
+
+/* break points*/
+/****************************
+ HIGH PPI DISPLAY BACKGROUNDS
+*****************************/
+.item-content {
+  background: url("../img/background-white.png");
+  padding: 60px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .item-content {
+    padding: 30px 0px 30px 0px;
+  }
+}
+
+.item-content .item-name {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+@media only screen and (max-width: 767px) {
+  .item-content .item-name {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+.item-content .shop-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+  .item-content .shop-holder {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px 5px;
+  }
+}
+
+.item-content .shop-holder__images {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .item-content .shop-holder__images {
+    width: 100%;
+  }
+}
+
+.item-content .shop-holder__images img {
+  width: 33%;
+}
+
+.item-content .shop-holder__images img:first-child {
+  width: 100%;
+}
+
+.item-content .shop-holder__info {
+  width: 50%;
+  padding: 30px 15px 30px 70px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .item-content .shop-holder__info {
+    width: 100%;
+    padding: 30px 0px;
+  }
+}
+
+.item-content .shop-holder__info-available {
+  float: left;
+}
+
+.item-content .shop-holder__info-article {
+  float: right;
+  color: #aeaeae;
+}
+
+.item-content .shop-holder__info-description {
+  margin-top: 50px;
+}
+
+.item-content .shop-holder__info-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+  .item-content .shop-holder__info-price {
+    margin-top: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.item-content .shop-holder__info-price span {
+  background-color: #e5e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 27px;
+}
+
+.item-content .shop-holder__info-price .button {
+  width: 78px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.item-content .shop-holder__info-including {
+  margin-top: 65px;
+}
+
+@media only screen and (max-width: 767px) {
+  .item-content .shop-holder__info-including {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.item-content .shop-holder__info-including h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.item-content .shop-holder__info-including ul {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.item-content .shop-holder__info-including ul li {
+  list-style-image: url("../img/diamond-black.png");
+}
+
+html {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+}
+
+.wrap {
+  width: 940px;
+  margin: 0px auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .wrap {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .wrap {
+    width: 100%;
+    padding: 0px 5px;
+  }
+}
+
+.button {
+  background: black;
+  border: 0px;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 140px;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button:focus, .button:hover {
+  background: #663d15;
+  outline: 0;
+}
+
+.breadcrumbs {
+  margin: 30px 0px 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumbs {
+    margin: 30px 0px 10px;
+  }
+}
+
+.breadcrumbs span {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumbs span {
+    margin: 0px 0px 10px;
+    display: inline-block;
+  }
+}
+
+.breadcrumbs img {
+  margin: 0px 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumbs img {
+    margin: 0px 10px;
+  }
+}
+
+.breadcrumbs .breadcrumb-active {
+  color: #d1cecc;
+}
+/*# sourceMappingURL=style.css.map */

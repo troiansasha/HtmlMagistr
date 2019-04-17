@@ -1,0 +1,329 @@
+@import '_device_mixin';
+@import '_normalize';
+
+$red: red;
+$green: green;
+$orange: orange;
+$blue: blue;
+$yellow: yellow;
+
+.red{
+    color: $red;
+}
+.green{
+    color: $green;
+}
+.orange{
+    color: $orange;
+}
+.blue{
+    color: $blue;
+}
+.yellow{
+    color: $yellow;
+}
+
+body{
+    width: 1000px;
+    margin: 0px auto;
+
+    @include Small {
+        width: 768px;
+    }
+    @include xSmall {
+        width: 100%;
+    }
+}
+.wrap{
+    display: flex;
+
+    @include xSmall {
+        display: block;
+    }
+}
+main{
+    width: 65%;
+
+    @include xSmall {
+        width: 100%;
+    }
+}
+aside{
+    width: 35%;
+
+    @include xSmall {
+        width: 100%;
+    }
+}
+.header{
+
+    &__main{
+
+        @include xSmall {
+            text-align: center
+        }
+
+        &-big{
+            font-size: 6.5em;
+            display: block;
+            line-height: 0.7em;
+            text-decoration: underline;
+            text-decoration-color: orange;
+
+            @include Small {
+                font-size: 4.5em;
+            }
+            @include xSmall {
+                font-size: 3.3em;
+            }
+        }
+
+        &-small{
+            font-size: 2.3em;
+            line-height: 1em;
+            margin-top: 0.5em;
+            display: block;
+            font-family: auto;
+            text-transform: uppercase;
+
+            @include Small {
+                font-size: 1.6em;
+            }
+            @include xSmall {
+                font-size: 1.15em;
+                line-height: 1.3em;
+            }
+        }
+    }
+
+    &__extra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px;
+        margin-top: 25px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+
+        @include xSmall {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &-date{
+            text-transform: uppercase;
+            font-weight: 600;
+
+            @include xSmall {
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+
+        &-info{
+            display: flex;
+            width: 40%;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            
+            @include Small {
+                display: block;
+                text-align: right
+            }
+            @include xSmall {
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 5px;
+            }
+
+            &__number{
+                margin-bottom: 5px;
+            }
+
+            &__site{
+                color: orange;
+                text-decoration: none;
+                font-weight: 600;
+
+                @include Small {
+                    display: block
+                }
+            }
+        }
+    }
+}
+
+article{
+    margin-top: 30px;
+
+    @include Small {
+        margin-top: 15px;
+    }
+    @include xSmall {
+        margin-top: 15px;
+    }
+}
+
+.article{
+
+    &__header{
+        @include xSmall {
+            text-align: center
+        }
+
+        &-big{
+            text-transform: uppercase;
+            font-size: 2.2em;
+
+            @include Small {
+                font-size: 1.6em;
+            }
+            @include xSmall {
+                font-size: 1.2em;
+            }
+        }
+        &-small{
+            font-size: 1.65em;
+            text-transform: uppercase;
+
+            @include Small {
+                font-size: 1.2em;
+            }
+            @include xSmall {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    &__content{
+        margin-top: 20px;
+        text-indent: 30px;
+
+        @include xSmall {
+            margin-top: 10px;
+            padding: 0px 5px;
+            text-indent: 0px;
+        }
+
+        &-text{
+            text-align: justify;
+            margin-top: 15px;
+
+            &:first-child{
+                margin: 0px
+            }
+
+            &--lined{
+                padding-bottom: 10px;
+                border-bottom: 5px orange;
+            }
+
+            &--cursive{
+                font-style: italic
+            }
+
+            &--bold{
+                font-weight: 600;
+            }
+        }
+
+        img{
+            max-width: 300px;
+            float: right;
+            margin-left: 10px;
+
+            @include Small {
+                max-width: 250px;
+                margin-left: 15px;
+            }
+            @include xSmall {
+                margin: 0px 10px 0px 0px;
+                max-width: 50%;
+                float: left;
+            }
+        }
+    }
+}
+
+aside{
+    padding: 2em;
+    
+    @include Small {
+        padding: 1.3em 1em;
+    }
+    @include xSmall {
+        padding: 0.5em;
+    }
+
+    .article{
+        position: relative;
+        padding: 10px 10px 35px;
+        margin-top: 40px;
+
+        @include xSmall{
+            max-width: 400px;
+            margin: 10px auto 0px;
+        }
+
+        &:first-child{
+            margin: 0px;
+
+            @include xSmall{
+                margin: 0px auto;
+            }
+        }
+
+        &:last-child{
+            margin-top: 10px;
+        }
+
+        &--bordered{
+            border: 2px dashed #00b900;
+
+            h2 {
+                @include Small {
+                    font-size: 1.2em;
+                    text-align: center;
+                }
+            }
+        }
+
+        &--gradient{
+            background-color: rgba(128, 128, 128, 0.35);
+        }
+
+        &--grey{
+            background-color: rgba(128, 128, 128, 0.35);
+            border-bottom: 2px solid black;
+
+            h2{
+                font-weight: 500;
+                font-family: cursive;
+            }
+        }
+
+        img{
+            margin-top: 5px;
+            width: 100%;
+
+            @include Small {
+                max-width: 200px;
+                margin: 5px auto 0px;
+                display: block;
+            }
+        }
+
+        &-text{
+            margin-top: 10px;
+        }
+    }
+
+    .page-number{
+        font-weight: 600;
+        position: absolute;
+        bottom: 5px;
+        font-size: 24px;
+        right: 10px;
+    }
+}
+

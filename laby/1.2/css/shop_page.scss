@@ -1,0 +1,218 @@
+@import '_device_mixin';
+
+.shop-content{ 
+    background: url("../img/background-white.png");
+    padding: 60px 0px 30px 0px;
+
+    @include xSmall{
+        padding: 30px 0px 30px 0px;
+    }
+
+    .shop-name{
+        font-size: 30px;
+        line-height: 42px;
+
+        @include xSmall{
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+
+    .shop-holder{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .items-list{
+        display: flex;
+        justify-content: space-between;
+
+        @include xSmall{
+            flex-wrap: wrap
+        }
+
+        &__aside{
+            width: 25%;
+
+            @include xSmall{
+                width: 100%;
+                text-align: center;
+                padding: 0px 15px;
+            }
+            
+            &-makers{
+                h2{
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 30px;
+
+                    @include xSmall{
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &-item{
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    input{
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 20px;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+            &-groups{
+                margin-top: 60px;
+                
+                @include xSmall{
+                    margin-top: 15px;
+                }
+
+                h2{
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 30px;
+
+                    @include xSmall{
+                        margin-bottom: 15px;
+                    }
+                }
+
+                &-item{
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+
+                    input{
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 20px;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &-show{
+                margin: 45px 0px 0px;
+                
+                @include xSmall{
+                    margin: 15px auto 0px;
+                }
+            }
+        }
+
+        &__main{
+            width: 72%;
+            
+            @include xSmall{
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .list{
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                
+                @include xSmall{
+                    justify-content: center
+                }
+                @include xxSmall{
+                    justify-content: space-between
+                }
+
+                &-item{
+                    background-color: #f7f7f7;
+                    width: 32%;
+                    margin-bottom: 15px;
+                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.38);
+
+                    
+                    @include xSmall{
+                        width: 80%;
+                    }
+                    @include xxSmall{
+                        width: 45%;
+                    }
+            
+                    img{
+                        width: 95%;
+                        margin: 0px auto;
+                        display: block;
+                    }
+    
+                    .main-item__holder{
+                        padding: 15px;
+                        background-color: white;
+                        min-height: 120px;
+
+                        &-name{
+                            font-size: 14px;
+                        }
+
+                        &-price{
+                            display: flex;
+                            margin-top: 10px;
+
+                            span{
+                                background-color: #e5e5e5;
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                padding: 0px;
+                                width: 66%;
+                                justify-content: center
+                            }
+                            button{
+                                width: 80px;
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pagination{
+                margin-top: 40px;
+
+                @include xSmall{
+                    text-align: center;
+                }
+                
+                &-item{
+                    padding: 11px 18px;
+                    margin-right: 7px;
+                    display: inline-block;
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+
+                    &.active{
+                        background-color: white;
+                        color: black;
+
+                        &:hover{
+                            background-color: white;
+                        }
+                    }
+
+                    &:hover{
+                        background-color: #663d15;
+                    }
+                }
+            }
+        }
+    }
+}
